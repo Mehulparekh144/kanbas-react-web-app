@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <title>Lab 1</title>
+  </head>
+  <body>
+    <a href="../../index.html">Home</a>
+    <h1>Assignment 1</h1>
+    The HyperText Markup Language or HTML is the standard markup language for
+    documents designed to be displayed in a web browser. It defines the content
+    and structure of web content. It is often assisted by technologies such as
+    Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+
+    <h2>Forms</h2>
+    <form action="">
+      <label>
+        Username :
+        <input
+          value="Jane"
+          type="text"
+          title="Please enter your username"
+          readonly
+          placeholder="Jayesh Dodeja"
+        />
+      </label>
+      <br />
+      <label>
+        Email :
+        <input
+          value=""
+          type="text"
+          title="Please enter your email"
+          placeholder="jane@mail.com"
+        />
+      </label>
+      <br />
+      <label> Password : <input type="password" /> </label>
+      <br />
+      <label>
+        Salary : <input min="10000" max="200000" type="number" /><br />
+      </label>
+      <br />
+      <label>
+        Date :
+        <input
+          value="2001-10-15"
+          min="2023-01-05"
+          max="2023-01-10"
+          type="date"
+        /><br />
+      </label>
+      <br />
+      <label> Time : <input type="time" /><br /> </label>
+      <br />
+      <label> Color : <input type="color" /> </label>
+      <br />
+      <input type="radio" name="color" id="yellow" />
+      <label for="yellow">Yellow</label>
+      <label for="red">
+        <input type="radio" name="color" id="red" />
+        Red
+      </label>
+      <input type="radio" name="color" id="blue" />
+      <label for="blue">Blue</label> <br />
+      <label>
+        Favourite Genre:
+        <input type="checkbox" value="HORROR" />Horror
+        <input type="checkbox" value="COMEDY" />Comedy
+        <input type="checkbox" value="DRAMA" />Drama
+      </label>
+      <br />
+      <label>
+        Favorite Books:
+        <select>
+          <option value="BOOK1">Dune</option>
+          <option value="BOOK2">Dark Knight</option>
+          <option value="BOOK3">Avengers</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Stationary to buy:
+        <select multiple>
+          <option value="BOOK1">Pen</option>
+          <option value="BOOK2">Marker</option>
+          <option value="BOOK3">Pencil</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Tell something about yourself:
+        <textarea
+          cols="20"
+          rows="10"
+          title="Write about yourself"
+          placeholder="Biography"
+        ></textarea>
+      </label>
+      <br />
+      <label>
+        Upload Resume
+        <input type="file" />
+      </label>
+      <br />
+      <label>
+        Rate our website
+        <input type="range" />
+      </label>
+      <br />
+      <button type="button">Click me !</button>
+    </form>
+    <h2>Headings</h2>
+    <h3>This is heading 3</h3>
+    <h4>This is heading 4</h4>
+    <h5>This is heading 5</h5>
+    <h2>Paragraphs</h2>
+    <p>
+      HTML can embed programs written in a scripting language such as
+      JavaScript, which affects the behavior and content of web pages. The
+      inclusion of CSS defines the look and layout of content.
+    </p>
+    <p>
+      The World Wide Web Consortium (W3C), former maintainer of the HTML and
+      current maintainer of the CSS standards, has encouraged the use of CSS
+      over explicit presentational HTML since 1997.A form of HTML, known as
+      HTML5, is used to display video and audio, together with JavaScript.
+    </p>
+    <h2>Lists</h2>
+    <h3>Ordered</h3>
+    <h4>Chores to do</h4>
+    <ol>
+      <li>Buy groceries</li>
+      <li>Take out snow</li>
+      <li>Go shopping</li>
+      <li>Clean house</li>
+    </ol>
+    <h3>Unordered</h3>
+    <h4>My favourite sportsman</h4>
+    <ul>
+      <li>Virat Kohli</li>
+      <li>Lionel Messi</li>
+      <li>Tiger Woods</li>
+      <li>Roger federor</li>
+    </ul>
+
+    <h2>Tables</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Harry</td>
+          <td>50/100</td>
+        </tr>
+        <tr>
+          <td valign="top" rowspan="2">John</td>
+          <td>Sears</td>
+          <td>70/100</td>
+        </tr>
+        <tr>
+          <td>Woods</td>
+          <td>80/100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Total</td>
+          <td>200/300</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Image Tags</h2>
+    <p>Loading from image link...</p>
+    <!-- Credits - https://source.unsplash.com/random -->
+    <img
+      width="100"
+      height="100"
+      src="https://source.unsplash.com/random"
+      alt="Url Image"
+    />
+    <p>Loading from image locally...</p>
+    <!-- Credits - Image from the react application -->
+    <img width="100" height="100" src="/logo192.png" alt="Local Image" />
+  </body>
+</html>
