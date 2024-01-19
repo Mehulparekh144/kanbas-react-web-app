@@ -3,7 +3,7 @@
     <title>Edit Assignments</title>
   </head>
   <body>
-    <table>
+    <table width="100%">
       <tbody>
         <tr>
           <td valign="top">
@@ -23,7 +23,7 @@
           <td valign="top">
             <ul>
               <li><a href="../../Home/screen.html">Home</a></li>
-              <li><a href="">Modules</a></li>
+              <li><a href="#">Modules</a></li>
               <li><a href="#">Piazza</a></li>
               <li><a href="#">Zoom Meetings</a></li>
               <li><a href="../../Assignments/screen.html">Assignments</a></li>
@@ -43,86 +43,166 @@
             </ul>
           </td>
           <td>
-            <form>
-              <select>
-                <option>SpeedGrader</option>
-              </select>
-              <hr />
-              <h3>Assignment Name</h3>
-              <input type="text" value="A1 - ENV+HTML" /><br /><br />
-              <textarea rows="10" cols="20"></textarea><br />
-              <label>
-                <p>
-                  Points
-                  <br />
-                  <input type="number" value="100" />
-                </p>
-              </label>
-              <label>
-                <p>
-                  Assignment Group<br />
-                  <select>
-                    <option value="">ASSIGNMENTS</option>
-                  </select>
-                </p>
-              </label>
-              <label>
-                <p>
-                  Display Grade as<br />
-                  <select>
-                    <option value="">Percentage</option>
-                  </select>
-                </p>
-              </label>
-              <label>
-                <p>
-                  Submission Type<br />
-                  <select>
-                    <option value="">Online</option>
-                  </select>
-                </p>
-              </label>
+            <select>
+              <option>SpeedGrader</option>
+            </select>
+            <hr />
+            <form action="/Kanbas/Courses/Assignments/screen.html">
+              <table>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="wd-assignment-name">Assignment Name</label>
+                    </td>
+                    <td>
+                      <input
+                        type="text"
+                        id="wd-assignment-name"
+                        value="A1 - ENV+HTML"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wd-assignment-points">Points</label>
+                    </td>
+                    <td>
+                      <input
+                        type="number"
+                        value="100"
+                        max="100"
+                        min="0"
+                        id="wd-assignment-points"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="wd-assignment-description">Description</label>
+                    </td>
+                    <td>
+                      <textarea
+                        name=""
+                        id="wd-assignment-description"
+                        cols="30"
+                        rows="10"
+                      >
+                      </textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wd-assignment-group">Assignment Group</label
+                      ><br />
+                    </td>
+                    <td>
+                      <select id="wd-assignment-group">
+                        <option value="">ASSIGNMENTS</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wd-assignment-grade">Display Grade as</label>
+                    </td>
+                    <td>
+                      <select id="wd-assignment-grade">
+                        <option value="">Percentage</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top">
+                      <label for="wd-assignment-submission"
+                        >Submission Type</label
+                      >
+                    </td>
+                    <td>
+                      <select id="wd-assignment-submission">
+                        <option value="">Online</option>
+                      </select>
+                      <br /><br />
+                      <label>Online Entry Options</label><br />
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wd-text-entry-options"
+                      />
+                      <label for="wd-text-entry-options">Text Entry</label
+                      ><br />
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wd-url-entry-options"
+                      />
+                      <label for="wd-url-entry-options">Website URL</label
+                      ><br />
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wd-media-entry-options"
+                      />
+                      <label for="wd-media-entry-options"
+                        >Media Recordings</label
+                      ><br />
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wd-student-entry-options"
+                      />
+                      <label for="wd-student-entry-options"
+                        >Student Annotation</label
+                      ><br />
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wd-file-entry-options"
+                      />
+                      <label for="wd-file-entry-options">File Uploads</label
+                      ><br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wd-assign-type">Assign</label>
+                    </td>
+                    <td>
+                      <input type="text" value="Everyone" id="wd-assign-type" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="wd-due-date">Due</label></td>
+                    <td>
+                      <input type="date" value="01-01-2024" id="wd-due-date" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wd-available-date">Available From</label>
+                    </td>
+                    <td>
+                      <input
+                        type="date"
+                        id="wd-available-date"
+                        value="01-01-2024"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="wd-available-until">Until</label></td>
+                    <td>
+                      <input
+                        type="date"
+                        id="wd-available-until"
+                        value="01-01-2024"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-              <label>
-                Online Entry Options<br />
-                <input type="checkbox" name="" id="" /> Text Entry<br />
-                <input type="checkbox" name="" id="" /> Website URL<br />
-                <input type="checkbox" name="" id="" /> Media Recordings<br />
-                <input type="checkbox" name="" id="" /> Student Annotation<br />
-                <input type="checkbox" name="" id="" /> File Uploads<br /> </label
-              ><br />
-
-              <label>
-                <p>
-                  Assign <br />
-                  Assign to<br />
-                  <input type="text" value="Everyone" />
-                </p>
-              </label>
-
-              <label>
-                <p>
-                  Due <br />
-                  <input type="date" value="01-01-2024" />
-                </p>
-              </label>
-
-              <label>
-                <p>
-                  Available From <br />
-                  <input type="date" value="01-01-2024" />
-                </p>
-              </label>
-
-              <label>
-                <p>
-                  Until <br />
-                  <input type="date" value="01-01-2024" />
-                </p>
-              </label>
-
-              <button><a href="../screen.html">Cancel</a></button>
-              <button><a href="../screen.html">Save</a></button>
+              <button>Cancel</button>
+              <button>Save</button>
             </form>
           </td>
         </tr>
