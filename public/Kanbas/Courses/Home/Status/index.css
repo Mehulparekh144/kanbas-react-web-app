@@ -1,0 +1,30 @@
+.wd-status,
+.wd-status * {
+  border-radius: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.wd-status {
+  margin: 5px;
+}
+
+.wd-status > a {
+  background-color: lightgray;
+  border: 1px solid gray !important;
+}
+
+.wd-status > a {
+  margin-bottom: 10px;
+}
+
+
+.wd-status-coming{
+  color: red;
+  text-decoration: none;
+}
+
+.wd-status-coming-muted {
+  color: grey;
+}

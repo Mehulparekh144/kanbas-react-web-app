@@ -1,147 +1,284 @@
 <html>
   <head>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
     <title>Grades</title>
   </head>
   <body>
-    <table width="100%">
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-              <li><a href="../../Account/Profile/screen.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../../Courses/Home/screen.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Help</a></li>
+    <html>
+      <head>
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        />
+        <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+        <title>Home</title>
+      </head>
+      <body>
+        <nav
+          style="--bs-breadcrumb-divider: '>'"
+          class="mt-2 wd-kanbas-content"
+          aria-label="breadcrumb"
+        >
+          <h3>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/Kanbas/Courses/Home/screen.html" style="color: red"
+                  >CS5610</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Grades</li>
+            </ol>
+          </h3>
+        </nav>
+        <hr />
+        <div class="d-md-flex d-sm-block">
+          <div
+            class="d-md-none d-flex justify-content-between align-items-center wd-responsive-navigation p-2"
+          >
+            <div>
+              <i class="fa fa-bars"></i>
+            </div>
+            <div class="text-center mt-2">
+              <h7>CS5610.12631.202410</h7>
+              <p>Modules</p>
+            </div>
+            <div>
+              <i class="fa fa-eye"></i>&nbsp;
+              <i class="fa fa-caret-down"></i>
+            </div>
+          </div>
+          <div class="d-none d-md-block">
+            <ul class="wd-kanbas-navigation">
+              <li>
+                <a
+                  href="http://northeastern.edu"
+                  style="
+                    font-size: 2.5rem;
+                    font-family: 'Times New Roman', Times, serif;
+                  "
+                  >N</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html"
+                  ><i class="fa fa-user-circle" style="color: white"></i>
+                  Account</a
+                >
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">
+                  <i class="fa fa-tachometer"></i> Dashboard</a
+                >
+              </li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Home/screen.html"
+                  ><i class="fa fa-book"></i> Courses</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-envelope"></i> Inbox</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-history"></i> History</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-laptop"></i> Studio</a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-question"></i><br />Help</a>
+              </li>
+              <li><a href="#">Commons</a></li>
             </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="../Home/screen.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
+          </div>
+          <div class="d-none d-md-block wd-kanbas-content">
+            <ul class="wd-navigation">
+              <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
+              </li>
+              <li><a href="https://www.piazza.com">Piazza</a></li>
               <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="../Assignments/screen.html">Assignments</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html"
+                  >Assignments</a
+                >
+              </li>
               <li><a href="#">Quizzes</a></li>
-              <li><a href="../Grades/screen.html">Grades</a></li>
+              <li class="wd-active">
+                <a href="/Kanbas/Courses/Grades/screen.html">Grades</a>
+              </li>
               <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="../Settings/Details/screen.html">Settings</a></li>
+              <li>
+                <a href="/Kanbas/Account/Profile/screen.html">Settings</a>
+              </li>
             </ul>
-          </td>
-          <td valign="top">
-            <table width="100%">
-              <tbody>
-                <tr>
-                  <td>
-                    <select>
-                      <option value="">Gradebook</option>
-                      <option value="">Change Gradebook View</option>
-                      <option value="">Traditional Gradebook</option>
-                      <option value="">Individual Gradebook</option>
-                    </select>
-                    <br />
-                    <label>
-                      <h3>Student Names</h3>
-                      <input placeholder="Search Students"
-                    /></label>
-                  </td>
+          </div>
+          <div class="flex-fill py-2 px-4">
+            <div class="d-flex flex-wrap gap-2 mb-3 justify-content-end">
+              <button class="btn btn-light" style="background-color: lightgray">
+                <i class="fa fa-file"></i> Import
+              </button>
+              <div class="btn btn-light" style="background-color: lightgray">
+                <i class="fa fa-file"></i>
+                <select
+                  class="btn btn-light border-0"
+                  style="background-color: lightgray"
+                >
+                  <option selected>Export</option>
+                </select>
+              </div>
+              <button class="btn btn-light" style="background-color: lightgray">
+                <i class="fa fa-cog"></i>
+              </button>
+            </div>
+            <div class="d-flex gap-2">
+              <div class="mb-3 w-50">
+                <label for="studentName" class="form-label">Student Name</label>
+                <input
+                  type="text"
+                  name=""
+                  id="studentName"
+                  class="form-control"
+                  placeholder="Search Students"
+                />
+              </div>
+              <div class="mb-3 w-50">
+                <label for="assignmentName" class="form-label"
+                  >Assignment Name</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="assignmentName"
+                  class="form-control"
+                  placeholder="Search Assignments"
+                />
+              </div>
+            </div>
+            <button
+              class="btn btn-light mb-3"
+              style="background-color: lightgray"
+            >
+              <i class="fa fa-filter"></i>
+              Apply Filters
+            </button>
 
-                  <td>
-                    <button>Import</button>
-                    <select>
-                      <option value="">Export</option>
-                    </select>
-                    <button>Configure</button>
-                    <label
-                      ><h3>Assignment Names</h3>
-                      <input placeholder="Search Assignments" />
-                    </label>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-
-            <button type="button">Apply filters</button><br />
-
-            <table border="1" width="100%">
-              <thead>
-                <th>Student Name</th>
-                <th>A1 SETUP out of 100</th>
-                <th>A2 HTML out of 100</th>
-                <th>A3 CSS out of 100</th>
-                <th>A4 BOOTSTRAP out of 100</th>
-                <th>A5 JAVASCRIPT out of 100</th>
-                <th>A6 REACT out of 100</th>
-                <th>A7 REDUX out of 100</th>
-                <th>A8 NODE out of 100</th>
-                <th>A9 MONGO out of 100</th>
-              </thead>
-              <tbody>
-                <tr align="center">
-                  <td>Jack Peralta</td>
-                  <td>99</td>
-                  <td>95</td>
-                  <td>96</td>
-                  <td>92</td>
-                  <td><input type="number" value="100" max="100" /></td>
-                  <td>97</td>
-                  <td>98</td>
-                  <td>100</td>
-                  <td>95</td>
-                </tr>
-                <tr align="center">
-                  <td>Vijay Singh</td>
-                  <td><input type="number" value="95" max="100" /></td>
-                  <td>96</td>
-                  <td>95</td>
-                  <td>94</td>
-                  <td>94</td>
-                  <td>99</td>
-                  <td>100</td>
-                  <td>98</td>
-                  <td>96</td>
-                </tr>
-                <tr align="center">
-                  <td>Vansh Shah</td>
-                  <td>99</td>
-                  <td>97</td>
-                  <td><input type="number" value="98" max="100" /></td>
-                  <td>97</td>
-                  <td>99</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>99</td>
-                  <td>99</td>
-                </tr>
-                <tr align="center">
-                  <td>Jainam Shah</td>
-                  <td>100</td>
-                  <td>100</td>
-                  <td>96</td>
-                  <td>97</td>
-                  <td>98</td>
-                  <td>99</td>
-                  <td>100</td>
-                  <td><input type="number" value="97" max="100" /></td>
-                  <td>96</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+            <div class="table-responsive">
+              <table class="table table-bordered" width="100%">
+                <thead class="table-light">
+                  <th>Student Name</th>
+                  <th>A1 SETUP out of 100</th>
+                  <th>A2 HTML out of 100</th>
+                  <th>A3 CSS out of 100</th>
+                  <th>A4 BOOTSTRAP out of 100</th>
+                  <th>A5 JAVASCRIPT out of 100</th>
+                  <th>A6 REACT out of 100</th>
+                  <th>A7 REDUX out of 100</th>
+                  <th>A8 NODE out of 100</th>
+                  <th>A9 MONGO out of 100</th>
+                </thead>
+                <tbody>
+                  <tr align="center">
+                    <td>Jack Peralta</td>
+                    <td>99</td>
+                    <td>95</td>
+                    <td>96</td>
+                    <td>92</td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="number"
+                        value="100"
+                        max="100"
+                      />
+                    </td>
+                    <td>97</td>
+                    <td>98</td>
+                    <td>100</td>
+                    <td>95</td>
+                  </tr>
+                  <tr align="center">
+                    <td>Vijay Singh</td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="number"
+                        value="95"
+                        max="100"
+                      />
+                    </td>
+                    <td>96</td>
+                    <td>95</td>
+                    <td>94</td>
+                    <td>94</td>
+                    <td>99</td>
+                    <td>100</td>
+                    <td>98</td>
+                    <td>96</td>
+                  </tr>
+                  <tr align="center">
+                    <td>Vansh Shah</td>
+                    <td>99</td>
+                    <td>97</td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="number"
+                        value="98"
+                        max="100"
+                      />
+                    </td>
+                    <td>97</td>
+                    <td>99</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>99</td>
+                    <td>99</td>
+                  </tr>
+                  <tr align="center">
+                    <td>Jainam Shah</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>96</td>
+                    <td>97</td>
+                    <td>98</td>
+                    <td>99</td>
+                    <td>100</td>
+                    <td>
+                      <input
+                        class="form-control"
+                        type="number"
+                        value="97"
+                        max="100"
+                      />
+                    </td>
+                    <td>96</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </body>
+    </html>
   </body>
 </html>

@@ -1,0 +1,886 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="../../styles.css" /> -->
+    <style>
+      /* p{
+        background-color: crimson;
+        color: pink;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Assignment 2 - CSS</h1>
+    <div>
+      <h2>Bootstrap</h2>
+      <ul>
+        <h3>Laying out content</h3>
+        <li>
+          <h4>Containers</h4>
+          <div class="container">
+            <h1>Hi I am a container</h1>
+          </div>
+        </li>
+        <li>
+          <h4>Grid</h4>
+          <div class="row">
+            <div class="col bg-danger">Left Half</div>
+            <div class="col bg-primary">Right Half</div>
+          </div>
+          <div class="row">
+            <div class="col-4 bg-warning">Smaller Half 1/3</div>
+            <div class="col-8 bg-success">Bigger Half 2/3</div>
+          </div>
+          <div class="row">
+            <div class="col-2 bg-dark text-white">Sidebar</div>
+            <div class="col-8 bg-secondary">Main Content</div>
+            <div class="col-2 bg-info">Sidebar</div>
+          </div>
+        </li>
+        <li>
+          <h4>Responsive Grid</h4>
+          <div class="row">
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger"
+            >
+              1
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning"
+            >
+              2
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary"
+            >
+              3
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger"
+            >
+              4
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning"
+            >
+              5
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary"
+            >
+              6
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger"
+            >
+              7
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning"
+            >
+              8
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary"
+            >
+              9
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-danger"
+            >
+              10
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-warning"
+            >
+              11
+            </div>
+            <div
+              class="col col-sm-6 col-md-4 col-lg-3 col-xl-2 col-xxl-1 bg-primary"
+            >
+              12
+            </div>
+          </div>
+        </li>
+        <li>
+          <h4>Hiding and showing content</h4>
+          <div class="row">
+            <div class="d-none d-md-block col-md-2 co bg-danger">SideBar</div>
+            <div class="col-6 bg-warning">Main</div>
+            <div class="col-4 bg-primary">SideBar</div>
+          </div>
+          <div class="d-block d-sm-none fa-2x">XS</div>
+          <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+          <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+          <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+          <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+          <div class="d-none d-xxl-block fa-2x">XXL</div>
+        </li>
+      </ul>
+      <ul>
+        <h3>Tables and List</h3>
+        <li>
+          <h4>Styling Tables</h4>
+          <table class="table">
+            <thead>
+              <tr class="table-danger">
+                <th>Quiz</th>
+                <th>Topic</th>
+                <th>Date</th>
+                <th>Grade</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Q1</td>
+                <td>HTML</td>
+                <td>01/31/2024</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Q2</td>
+                <td>CSS</td>
+                <td>02/01/2024</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Q3</td>
+                <td>Javascript</td>
+                <td>05/11/2024</td>
+                <td>100</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr class="table-success">
+                <td colspan="3">Average</td>
+                <td>100</td>
+              </tr>
+            </tfoot>
+          </table>
+        </li>
+        <li>
+          <h4>Responsive Tables</h4>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr class="table-dark">
+                  <th>Quiz</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Email</th>
+                  <th>Letter Grade</th>
+                  <th>Topic</th>
+                  <th>Date</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Q1</td>
+                  <td>Mehul</td>
+                  <td>123456789</td>
+                  <td>m@neu.edu</td>
+                  <td>A+</td>
+                  <td>HTML</td>
+                  <td>01/31/2024</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Q2</td>
+                  <td>JAke</td>
+                  <td>123456789</td>
+                  <td>jk@neu.edu</td>
+                  <td>A-</td>
+                  <td>CSS</td>
+                  <td>02/01/2024</td>
+                  <td>90</td>
+                </tr>
+                <tr>
+                  <td>Q3</td>
+                  <td>Rosa</td>
+                  <td>123456789</td>
+                  <td>rosa@neu.edu</td>
+                  <td>A+</td>
+                  <td>Javascript</td>
+                  <td>05/11/2024</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr class="table-success">
+                  <td colspan="7">Average</td>
+                  <td>97</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </li>
+        <li>
+          <h4>Styling Lists</h4>
+          <h5>Sports at Northeastern</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Tennis</li>
+            <li class="list-group-item active">Baseball</li>
+            <li class="list-group-item">Cricket</li>
+            <li class="list-group-item">Football</li>
+            <li class="list-group-item disabled">Hockey</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Styling Lists of Hyperlinks</h4>
+          <h5>Favorite TV Shows</h5>
+          <div class="list-group">
+            <a
+              href="https://www.imdb.com/title/tt0898266/"
+              class="list-group-item list-group-item-action active"
+              >Big Bang Theory</a
+            >
+            <a
+              href="https://www.imdb.com/title/tt0108778/"
+              class="list-group-item list-group-item-action"
+              >Friends</a
+            >
+            <a
+              href="https://www.imdb.com/title/tt0386676/"
+              class="list-group-item list-group-item-action"
+              >Office</a
+            >
+            <a
+              href="https://www.imdb.com/title/tt2467372/"
+              class="list-group-item list-group-item-action"
+              >Brooklyn 99</a
+            >
+            <a
+              href="https://www.imdb.com/title/tt1442437/"
+              class="list-group-item list-group-item-action disabled"
+              >Modern Family</a
+            >
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <h3>Styling Forms</h3>
+        <li>
+          <h4>Basic Form Styling</h4>
+          <div class="mb-3 w-50">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              placeholder="example@mail.com"
+              id="email"
+              class="form-control"
+            />
+            <label for="text">Text Area</label>
+            <textarea
+              class="form-control"
+              id="text"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+        </li>
+        <li>
+          <h4>Styling Dropdowns</h4>
+          <div class="mb-3 w-50">
+            <select class="form-select">
+              <option selected>Select Cars</option>
+              <option value="1">Ferrari</option>
+              <option value="2">Porsche</option>
+              <option value="3">Kia</option>
+            </select>
+          </div>
+        </li>
+        <li>
+          <h4>Styling Switches</h4>
+          <div class="mb-3 w-50 form-check form-switch">
+            <input type="checkbox" id="switch1" class="form-check-input" />
+            <label class="form-check-label" for="switch1">Default Mode</label>
+          </div>
+          <div class="mb-3 w-50 form-check form-switch">
+            <input
+              type="checkbox"
+              id="switch2"
+              checked
+              class="form-check-input"
+            />
+            <label class="form-check-label" for="switch2">Checked Mode</label>
+          </div>
+          <div class="mb-3 w-50 form-check form-switch">
+            <input
+              type="checkbox"
+              id="switch3"
+              disabled
+              checked
+              class="form-check-input"
+            />
+            <label class="form-check-label" for="switch3"
+              >Disabled Checked Mode</label
+            >
+          </div>
+          <div class="mb-3 w-50 form-check form-switch">
+            <input
+              type="checkbox"
+              id="switch3"
+              disabled
+              class="form-check-input"
+            />
+            <label class="form-check-label" for="switch3"
+              >Disabled Default Mode</label
+            >
+          </div>
+        </li>
+        <li>
+          <h4>Styling range and styles</h4>
+          <div class="w-50 mb-4">
+            <label for="range1" class="form-label">Range</label>
+            <input
+              type="range"
+              min="0"
+              max="5"
+              step="1"
+              id="range1"
+              class="form-range"
+            />
+          </div>
+        </li>
+        <li>
+          <h4>Styling addons</h4>
+          <div class="w-50 mb-4 input-group">
+            <span class="input-group-text">$</span>
+            <span class="input-group-text">0.00</span>
+            <input type="text" class="form-control" />
+          </div>
+          <div class="w-50 mb-4 input-group">
+            <input type="text" class="form-control" />
+            <span class="input-group-text">$</span>
+          </div>
+        </li>
+        <li>
+          <h4>Responsive Forms</h4>
+          <form action="">
+            <div class="mb-3 row">
+              <label for="email" class="col-sm-2 col-form-label">Email</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" id="phone" />
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="bio" class="col-sm-2 col-form-label">Bio </label>
+              <div class="col-sm-10">
+                <textarea class="form-control" id="bio" rows="3"></textarea>
+              </div>
+            </div>
+            <fieldset class="mb-3 row">
+              <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+              <div class="col-sm-10">
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    value="option1"
+                    id="r1"
+                    class="form-check-input"
+                    name="gridRadios"
+                    checked
+                  />
+                  <label for="r1" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    value="option2"
+                    id="r2"
+                    class="form-check-input"
+                    name="gridRadios"
+                  />
+                  <label for="r2" class="form-check-label">Female</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    value="option3"
+                    id="r3"
+                    class="form-check-input"
+                    name="gridRadios"
+                  />
+                  <label for="r3" class="form-check-label">Other</label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="row mb-3">
+              <div class="col-sm-10 offset-sm-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="r6" />
+                  <label class="form-check-label" for="r6">
+                    Example checkbox</label
+                  >
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+        </li>
+        <li>
+          <h4>Overriding Bootstrap Styles</h4>
+          <button
+            class="btn btn-primary"
+            style="font-size: 30px; background: aqua"
+          >
+            Click me !
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <h3>Navigating with pills and tabs</h3>
+        <li>
+          <h4>Navigating with tabs</h4>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled" tabindex="-1">Contact us</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Navigating with pills</h4>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled" tabindex="-1">Contact us</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h4>Navigating with cards</h4>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/200"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <h3>Decorating Document with Fontawesome Icons</h3>
+        <li>
+          <h4>Simple icons</h4>
+          <i class="fa fa-cog"></i> <i class="fa fa-heart"></i>
+          <i class="fa fa-share"></i> <i class="fa fa-comment"></i><br />
+          <i class="fa fa-image"></i> <i class="fa fa-bar-chart"></i>
+          <i class="fa fa-calendar"></i> <i class="fa fa-smile-o"></i>
+        </li>
+        <li>
+          <h4>Resizing Icons</h4>
+          <i class="fa fa-cog fa-2x"></i> <i class="fa fa-heart fa-3x"></i>
+          <i class="fa fa-share fa-3x"></i> <i class="fa fa-comment fa-2x"></i
+          ><br />
+          <i class="fa fa-image fa-4x"></i>
+          <i class="fa fa-bar-chart fa-3x"></i>
+          <i class="fa fa-calendar" style="font-size: 2.3em"></i>
+          <i class="fa fa-smile-o"></i>
+        </li>
+        <li>
+          <h4>Coloring Icons</h4>
+          <i class="fa fa-cog fa-2x" style="color: tomato"></i>
+          <i class="fa fa-heart fa-3x" style="color: violet"></i>
+          <i class="fa fa-share fa-3x" style="color: orange"></i>
+          <i class="fa fa-comment fa-2x" style="color: navy"></i><br />
+          <i class="fa fa-image fa-4x" style="color: red"></i>
+          <i class="fa fa-bar-chart fa-3x" style="color: darkslategray"></i>
+          <i class="fa fa-calendar" style="font-size: 5em; color: yellow"></i>
+        </li>
+        <li>
+          <h4>Brand Icons</h4>
+          <i class="fa fa-apple"></i>
+          <i class="fa fa-google"></i>
+          <i class="fa fa-twitter"></i>
+        </li>
+        <li>
+          <h4>Stacking Icons</h4>
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-square fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i> </span
+          ><br />
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-flag fa-stack-1x fa-inverse"></i> </span
+          ><br />
+          <span class="fa-stack fa-2x">
+            <i class="fa fa-camera fa-stack-1x"></i>
+            <i class="fa fa-ban fa-stack-2x" style="color: Tomato"></i> </span
+          ><br />
+        </li>
+        <li>
+          <h4>Rotating Icons</h4>
+          <div class="fa-2x">
+            <div class="fa fa-flag"></div>
+            <div class="fa fa-flag fa-rotate-90"></div>
+            <div class="fa fa-flag fa-rotate-180"></div>
+            <div class="fa fa-flag fa-rotate-270"></div>
+            <div class="fa fa-flag fa-flip-horizontal"></div>
+            <div class="fa fa-flag fa-flip-vertical"></div>
+            <div class="fa fa-flag fa-flip-both"></div>
+          </div>
+        </li>
+        <li>
+          <h4>Animating Icons</h4>
+          <div class="fa-3x">
+            <i class="fa fa-spinner fa-spin"></i>
+            <i class="fa fa-circle-notch fa-spin"></i>
+            <i class="fa fa-refresh fa-spin"></i><br />
+            <i class="fa fa-cog fa-spin"></i>
+            <i class="fa fa-spinner fa-pulse"></i>
+            <i class="fa fa-recycle fa-spin"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <h2>Style Attribute</h2>
+      <ul>
+        <li>
+          <h3>Styling with <em>style</em> attribute</h3>
+          <p style="background-color: cornflowerblue; color: white">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
+            numquam quas molestiae nemo molestias distinctio nesciunt
+            exercitationem cumque minima, beatae quae maxime cum incidunt fugit
+            adipisci facilis, delectus autem voluptas. Error architecto
+            doloremque libero reiciendis non, optio laudantium quod rerum?
+          </p>
+        </li>
+        <li>
+          <h3>Styling with <em>style</em> tag</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            eaque illum repudiandae iure laborum modi molestias, voluptatem
+            voluptate reprehenderit maxime nesciunt, qui ex earum praesentium,
+            atque doloribus. Cupiditate delectus cumque quae id debitis placeat
+            repellendus praesentium, sit sunt hic eaque.
+          </p>
+        </li>
+        <li>
+          <h3>Styling with external <em>CSS Documents</em></h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure modi
+            laboriosam autem, ipsam alias aperiam enim, assumenda dignissimos
+            mollitia sunt, nemo amet cupiditate? Suscipit culpa reiciendis
+            corporis est, quo asperiores non blanditiis repudiandae
+            necessitatibus earum tenetur inventore animi magni error!
+          </p>
+        </li>
+      </ul>
+      <h2>Selecting content to style</h2>
+      <ul>
+        <li>
+          <h3>Selecting content with <em>Id</em> selector</h3>
+          Selected with <b>wd-id-selector-1</b>
+          <p id="wd-id-selector-1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            similique mollitia distinctio eius a molestias eaque. Eos fuga quasi
+            optio sequi modi assumenda, autem earum fugit ullam tempore,
+            laboriosam excepturi laudantium iure adipisci ad, repudiandae nisi
+            consequatur? Dolores, officiis, ea, cum totam quod fugit in error ab
+            maxime blanditiis ex.
+          </p>
+          Selected with <b>wd-id-selector-2</b>
+          <p id="wd-id-selector-2">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            similique mollitia distinctio eius a molestias eaque. Eos fuga quasi
+            optio sequi modi assumenda, autem earum fugit ullam tempore,
+            laboriosam excepturi laudantium iure adipisci ad, repudiandae nisi
+            consequatur? Dolores, officiis, ea, cum totam quod fugit in error ab
+            maxime blanditiis ex.
+          </p>
+        </li>
+        <li>
+          <h3>Selecting content with <em>Class</em> selector</h3>
+          <h4 class="wd-class-selector">
+            Hi I am h4 and I have class - wd-class-selector
+          </h4>
+          <h1 class="wd-class-selector">
+            Hi I am h1 and I have class - wd-class-selector
+          </h1>
+        </li>
+        <li>
+          <h3>Selecting content based on <em>Document</em> structure</h3>
+          <div class="wd-selector-1">
+            I am wd-selector-1
+            <div class="wd-selector-2">
+              I am wd-selector-2
+              <p class="wd-selector-3">
+                I am wd-selector-3 <br />
+                <span class="wd-selector-4"> I am wd-selector-4 </span>
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <h2>Styling Color</h2>
+      <ul>
+        <li>
+          <h3>Styling <em>Foreground</em> color</h3>
+          <h3 class="wd-foreground-color-red">This h3 is red</h3>
+          <p class="wd-foreground-color-blue">
+            This p is blue but
+            <span class="wd-foreground-color-yellow">I am yellow</span>
+          </p>
+        </li>
+        <li>
+          <h3>Styling <em>Background</em> color</h3>
+          <h3 class="wd-background-color-red">This h3 has red background</h3>
+          <p class="wd-background-color-blue">
+            This p has blue background but
+            <span class="wd-background-color-yellow"
+              >I have yellow background</span
+            >
+          </p>
+        </li>
+      </ul>
+      <h2>Styling Box Model</h2>
+      <ul>
+        <li>
+          <h3>Styling <em>borders</em></h3>
+          <p class="wd-border-fat wd-border-red wd-border-solid">
+            Solid fat red border
+          </p>
+          <p class="wd-border-thin wd-border-blue wd-border-dashed">
+            Dashed thin blue border
+          </p>
+        </li>
+        <li>
+          <h3>Styling <em>Margins and Paddings</em></h3>
+          <div class="wd-padding-top-left wd-square wd-background-color-blue">
+            Padded Top Left
+          </div>
+          <div class="wd-padding-fat wd-square wd-background-color-red">
+            Padded equally
+          </div>
+          <div
+            class="wd-padding-bottom-right wd-square wd-background-color-yellow"
+          >
+            Padded Bottom Right
+          </div>
+          <hr />
+          <div class="wd-margin-bottom wd-square wd-background-color-blue">
+            Margin bottom
+          </div>
+          <div class="wd-margin-right-left wd-square wd-background-color-red">
+            Margin left and right
+          </div>
+          <div
+            class="wd-margin-all-around wd-square wd-background-color-yellow"
+          >
+            Margin equally all around
+          </div>
+        </li>
+        <li>
+          <h3>Styling <em>Corners</em></h3>
+          <p
+            class="wd-rounded-corners-top wd-border-thin wd-border-red wd-border-solid wd-padding-fat"
+          >
+            Rounded corners on the top
+          </p>
+          <p
+            class="wd-rounded-corners-bottom wd-border-thin wd-border-red wd-border-solid wd-padding-fat"
+          >
+            Rounded corners at the bottom
+          </p>
+          <p
+            class="wd-rounded-corners-all-around wd-border-thin wd-border-red wd-border-solid wd-padding-fat"
+          >
+            Rounded corners all around
+          </p>
+          <p
+            class="wd-rounded-corners-inline wd-border-thin wd-border-red wd-border-solid wd-padding-fat"
+          >
+            Different rounded corners
+          </p>
+        </li>
+        <li>
+          <h3>Styling <em>Dimensions</em></h3>
+          <div>
+            <div class="wd-dimension-portrait wd-background-color-yellow">
+              Portrait
+            </div>
+            <div class="wd-dimension-landscape wd-background-color-blue">
+              Landscape
+            </div>
+            <div class="wd-dimension-square wd-background-color-red">
+              Square
+            </div>
+          </div>
+        </li>
+        <li>
+          <h3>Styling <em>Positions</em></h3>
+          <ul>
+            <li>
+              <h4>Relative</h4>
+              <div class="wd-border-solid">
+                <div
+                  class="wd-dimension-portrait wd-background-color-yellow wd-pos-relative-pushed-up"
+                >
+                  Portrait
+                </div>
+                <div
+                  class="wd-dimension-landscape wd-background-color-blue wd-pos-relative-nudged-down"
+                >
+                  Landscape
+                </div>
+                <div
+                  class="wd-dimension-square wd-background-color-red wd-pos-relative-middle"
+                >
+                  Square
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>Absolute</h4>
+              <div class="wd-pos-relative">
+                <div
+                  class="wd-dimension-portrait wd-background-color-yellow wd-zindex-bring-to-front wd-pos-absolute-10-10"
+                >
+                  Portrait I am also front due to z-index 10
+                </div>
+                <div
+                  class="wd-dimension-landscape wd-background-color-blue wd-pos-absolute-50-50"
+                >
+                  Landscape
+                </div>
+                <div
+                  class="wd-dimension-square wd-background-color-red wd-pos-absolute-150-35"
+                >
+                  Square
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>Fixed</h4>
+              <div class="wd-pos-fixed wd-dimension-square">
+                Hi I am fixed !
+              </div>
+            </li>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <li>
+              <h4>Floating Content</h4>
+              <div>
+                We float left
+                <div
+                  class="wd-float-left wd-dimension-portrait wd-background-color-red"
+                >
+                  Floating Div 1
+                </div>
+                <div
+                  class="wd-float-left wd-dimension-portrait wd-background-color-yellow"
+                >
+                  Floating Div 2
+                </div>
+                <div
+                  class="wd-float-left wd-dimension-portrait wd-background-color-blue"
+                >
+                  Floating Div 3
+                </div>
+                <img
+                  src="https://picsum.photos/200"
+                  class="wd-float-right"
+                  alt=""
+                />
+                <div class="wd-float-done"></div>
+              </div>
+            </li>
+            <li>
+              <h4>Laying out content in <em>Grid</em></h4>
+              <div class="wd-grid-row">
+                <div class="wd-grid-col-half-page wd-background-color-yellow">
+                  <h3>Left half</h3>
+                </div>
+                <div class="wd-grid-col-half-page wd-background-color-blue">
+                  <h3>Right half</h3>
+                </div>
+              </div>
+              <div class="wd-grid-row">
+                <div class="wd-grid-col-third-page wd-background-color-yellow">
+                  <h3>Left third</h3>
+                </div>
+                <div
+                  class="wd-grid-col-two-thirds-page wd-background-color-red"
+                >
+                  <h3>Right two thirds</h3>
+                </div>
+              </div>
+              <div class="wd-grid-row">
+                <div
+                  class="wd-grid-col-left-sidebar wd-background-color-yellow"
+                >
+                  <h3>Side bar</h3>
+                  <p>This is the left sidebar</p>
+                </div>
+                <div class="wd-grid-col-main-content wd-background-color-blue">
+                  <h3>Main content</h3>
+                  <p>This is the main content.</p>
+                </div>
+                <div
+                  class="wd-grid-col-right-sidebar wd-background-color-yellow"
+                >
+                  <h3>Side bar</h3>
+                  <p>This is the right sidebar</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <h4>Laying out content using <em>Flex</em></h4>
+              <div class="wd-flex-row-container">
+                <div class="wd-background-color-red wd-width-100px">
+                  Red I have fixed width
+                </div>
+                <div class="wd-background-color-blue wd-flex-grow-1">
+                  Blue I am growing
+                </div>
+                <div class="wd-background-color-yellow">Yellow</div>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.wd-kanbas-navigation-responsive {
+  width: 100%;
+  height: max-content;
+}
+.wd-kanbas-navigation-responsive li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  list-style: none;
+}
+.wd-kanbas-navigation-responsive li.wd-active {
+  background-color: white;
+}
+.wd-kanbas-navigation-responsive li.wd-active a {
+  color: red;
+}
+.wd-kanbas-navigation-responsive a {
+  text-align: center;
+  color: red;
+  text-decoration: none;
+}
+.wd-kanbas-navigation-responsive a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+

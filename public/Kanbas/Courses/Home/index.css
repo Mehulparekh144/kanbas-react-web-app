@@ -1,0 +1,7 @@
+.wd-responsive-navigation {
+  background-color: black;
+}
+
+.wd-responsive-navigation > div {
+  color: white;
+}
