@@ -1,0 +1,10 @@
+[
+  { "title": "Buy milk", "status": "CANCELED", "done": true },
+  { "title": "Complete assignment", "status": "IN PROGRESS", "done": false },
+  { "title": "Walk the dog", "status": "DEFERRED", "done": false },
+  { "title": "Go grocery shopping", "status": "IN PROGRESS", "done": false },
+  { "title": "Call mom", "status": "PENDING", "done": false },
+  { "title": "Finish coding project", "status": "IN PROGRESS", "done": false },
+  { "title": "Read a book", "status": "COMPLETED", "done": true },
+  { "title": "Exercise for 30 minutes", "status": "IN PROGRESS", "done": false }
+]

@@ -1,0 +1,9 @@
+.wd-searchbar{
+  width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+  .wd-searchbar {
+    width: 100%;
+  }
+}

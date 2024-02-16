@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <title>Lab 3</title>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <script>
+      document.write("<h2>Hello, world</h2>");
+
+      const todos =  [
+        {
+          id : 1 , text : 'Learn HTML', completed : true
+        },
+        {
+          id : 2 , text : 'Learn CSS', completed : true
+        },
+        {
+          id : 3 , text : 'Learn Javascript', completed : false
+        },
+      ]
+      document.write("<h3>To Dos</h3>");
+      document.write("<ul>");
+      todos.forEach((todo)=>{
+        document.write(`<li>${todo.text} - ${todo.completed}</li>`);
+      })
+      document.write("</ul>");
+    </script>
+  </body>
+</html>

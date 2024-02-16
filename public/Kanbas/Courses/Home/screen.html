@@ -3,8 +3,8 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
-    <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css"/>
-    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css"/>
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/Status/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
@@ -15,7 +15,9 @@
   </head>
   <body>
     <div class="d-md-flex d-sm-block">
-      <div class="d-md-none d-flex justify-content-between align-items-center wd-responsive-navigation p-2">
+      <div
+        class="d-md-none d-flex justify-content-between align-items-center wd-responsive-navigation p-2"
+      >
         <div>
           <a href="/Kanbas/Navigation/Responsive/index.html">
             <i class="fa fa-bars text-white"></i>
@@ -79,7 +81,9 @@
       </div>
       <div class="d-none d-md-block wd-kanbas-content">
         <ul class="wd-navigation">
-          <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+          <li class="wd-active">
+            <a href="/Kanbas/Courses/Home/screen.html">Home</a>
+          </li>
           <li>
             <a href="/Kanbas/Courses/Modules/screen.html">Modules</a>
           </li>
@@ -96,23 +100,23 @@
       </div>
       <div class="flex-fill py-2">
         <div class="d-flex flex-wrap gap-1 w-100 justify-content-end">
-      <button class="btn btn-light" style="background-color: lightgray">
-          Collapse All
-        </button>
-        <button class="btn btn-light" style="background-color: lightgray">
-          Expand All
-        </button>
-        <button class="btn btn-light" style="background-color: lightgray">
-          View Progress
-        </button>
-        <select class="btn btn-light" style="background-color: lightgray">
-          <i class="fa fa-check-circle"></i>
-          <option value="">Publish All</option>
-        </select>
-        <button class="btn btn-danger">+ Module</button>
-        <button class="btn btn-light" style="background-color: lightgray">
-          &vellip;
-        </button>
+          <button class="btn btn-light" style="background-color: lightgray">
+            Collapse All
+          </button>
+          <button class="btn btn-light" style="background-color: lightgray">
+            Expand All
+          </button>
+          <button class="btn btn-light" style="background-color: lightgray">
+            View Progress
+          </button>
+          <select class="btn btn-light" style="background-color: lightgray">
+            <i class="fa fa-check-circle"></i>
+            <option value="">Publish All</option>
+          </select>
+          <button class="btn btn-danger">+ Module</button>
+          <button class="btn btn-light" style="background-color: lightgray">
+            &vellip;
+          </button>
         </div>
 
         <ul class="list-group wd-modules">
@@ -226,51 +230,75 @@
           </li>
         </ul>
       </div>
-     <div class="flex-grow-0 mx-2 d-none d-lg-block">
-          <h4>Course Status</h4>
-    <button class="btn btn-light" style="background-color: lightgray;"><i class="fa fa-ban"></i> Unpublish</button>
-    <button class="btn btn-success"><i class="fa fa-check-circle"></i> Published</button>
-    <ul class="list-group wd-status mb-4">
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-file"></i> Import Existing Content</li>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-arrow-circle-right"></i> Import from Commons</a>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-circle-o"></i> Choose Home Page</a>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bar-chart"></i> View Course Stream</a>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bullhorn"></i> New Announcement</a>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bar-chart"></i> New Analytics</a>
-      <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-bell"></i>
-        View Course Notifications</a>
-    </ul>
+      <div class="flex-grow-0 mx-2 d-none d-lg-block">
+        <h4>Course Status</h4>
+        <button class="btn btn-light" style="background-color: lightgray">
+          <i class="fa fa-ban"></i> Unpublish
+        </button>
+        <button class="btn btn-success">
+          <i class="fa fa-check-circle"></i> Published
+        </button>
+        <ul class="list-group wd-status mb-4">
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-file"></i> Import Existing Content</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-arrow-circle-right"></i> Import from Commons</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-circle-o"></i> Choose Home Page</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-bar-chart"></i> View Course Stream</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-bullhorn"></i> New Announcement</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-bar-chart"></i> New Analytics</a
+          >
+          <a href="#" class="list-group-item list-group-item-action"
+            ><i class="fa fa-bell"></i> View Course Notifications</a
+          >
+        </ul>
 
-    <div class="d-flex justify-content-between">
-      <h5>Coming Up</h5>
-      <a href="#" class="wd-status-coming"><i class="fa fa-calendar" style="color: grey;"></i> View Calendar</a>
-    </div>
-    <hr class="m-0"/>
-    <div class="mt-2">
-      <div class="d-flex align-items-start gap-2">
-        <i class="fa fa-calendar" style="color: grey;"></i>
-        <div>
-          <a href="#" class="wd-status-coming">Lecture</a>
-          <p class="wd-status-coming-muted">CS5600.12631.202410 Jan 26 at 11:45am</p>
+        <div class="d-flex justify-content-between">
+          <h5>Coming Up</h5>
+          <a href="#" class="wd-status-coming"
+            ><i class="fa fa-calendar" style="color: grey"></i> View Calendar</a
+          >
+        </div>
+        <hr class="m-0" />
+        <div class="mt-2">
+          <div class="d-flex align-items-start gap-2">
+            <i class="fa fa-calendar" style="color: grey"></i>
+            <div>
+              <a href="#" class="wd-status-coming">Lecture</a>
+              <p class="wd-status-coming-muted">
+                CS5600.12631.202410 Jan 26 at 11:45am
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <i class="fa fa-calendar" style="color: grey"></i>
+            <div>
+              <a href="#" class="wd-status-coming">Quiz</a>
+              <p class="wd-status-coming-muted">
+                CS5010.12631.202410 Feb 01 at 9:00am
+              </p>
+            </div>
+          </div>
+          <div class="d-flex align-items-start gap-2">
+            <i class="fa fa-calendar" style="color: grey"></i>
+            <div>
+              <a href="#" class="wd-status-coming">Exam</a>
+              <p class="wd-status-coming-muted">
+                CS5600.12631.202410 Feb 26 at 11:45am
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="d-flex align-items-start gap-2">
-        <i class="fa fa-calendar" style="color: grey;"></i>
-        <div>
-          <a href="#" class="wd-status-coming">Quiz</a>
-          <p class="wd-status-coming-muted">CS5010.12631.202410 Feb 01 at 9:00am</p>
-        </div>
-      </div>
-      <div class="d-flex align-items-start gap-2">
-        <i class="fa fa-calendar" style="color: grey;"></i>
-        <div>
-          <a href="#" class="wd-status-coming">Exam</a>
-          <p class="wd-status-coming-muted">CS5600.12631.202410 Feb 26 at 11:45am</p>
-        </div>
-      </div>
-    </div>
-     </div>
-     
     </div>
   </body>
 </html>
