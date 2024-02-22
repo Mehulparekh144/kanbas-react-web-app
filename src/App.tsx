@@ -6,8 +6,8 @@ import JavaScript from "./Labs/a3/JavaScript";
 import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 // import './App.css';
 function App() {
-  return (
-    <HashRouter>
+      return (
+  <HashRouter>
       <div>
         <Routes>
           <Route path="/" element={<Navigate to="/Labs" />} />

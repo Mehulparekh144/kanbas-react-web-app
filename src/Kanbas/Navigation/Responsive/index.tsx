@@ -52,7 +52,7 @@ function ResponsiveNavigation() {
   return (
     <>
       {isOpen ? (
-        <div className="w-100">
+        <div className="w-100 d-md-none d-block">
           <div className="mb-4 p-3 w-100 d-flex justify-content-end">
             <IoClose
               style={{ color: "grey", cursor: "pointer" }}
