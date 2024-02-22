@@ -1,20 +1,27 @@
 import { FaCog, FaFileExport, FaFileImport, FaFilter } from "react-icons/fa";
 import { assignments, enrollments, grades, users } from "../../Database";
 import { useParams } from "react-router-dom";
+
 function Grades() {
   const { courseId } = useParams();
   const as = assignments.filter((assignment) => assignment.course === courseId);
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
+
   return (
     <div>
       <div className="d-flex flex-wrap gap-2 me-2 mb-3 justify-content-end">
         <button
           className="btn btn-light"
           style={{ backgroundColor: "lightgrey" }}
+          key="import-btn"
         >
           <FaFileImport /> Import
         </button>
-        <div className="btn btn-light" style={{ backgroundColor: "lightgrey" }}>
+        <div
+          className="btn btn-light"
+          style={{ backgroundColor: "lightgrey" }}
+          key="export-btn"
+        >
           <FaFileExport />
           <select
             className="btn btn-light border-0"
@@ -26,6 +33,7 @@ function Grades() {
         <button
           className="btn btn-light"
           style={{ backgroundColor: "lightgrey" }}
+          key="settings-btn"
         >
           <FaCog />
         </button>
@@ -59,32 +67,39 @@ function Grades() {
       <button
         className="btn btn-light mb-3"
         style={{ backgroundColor: "lightgrey" }}
+        key="apply-filters-btn"
       >
         <FaFilter /> Apply Filters
       </button>
       <div className="table-responsive">
         <table className="table">
           <thead>
-            <th>Student Name</th>
-            {as.map((assignment) => (
-              <th>{assignment.title}</th>
-            ))}
+            <tr>
+              <th key="student-name-header">Student Name</th>
+              {as.map((assignment) => (
+                <th key={assignment._id}>{assignment.title}</th>
+              ))}
+            </tr>
           </thead>
           <tbody>
             {es.map((enrollment) => {
               const user = users.find((user) => user._id === enrollment.user);
               return (
-                <tr>
+                <tr key={enrollment.user}>
                   <td>
                     {user?.firstName} {user?.lastName}
                   </td>
-                  {assignments.map((assignment) => {
+                  {as.map((assignment) => {
                     const grade = grades.find(
                       (grade) =>
                         grade.student === enrollment.user &&
                         grade.assignment === assignment._id
                     );
-                    return <td>{grade?.grade || ""}</td>;
+                    return (
+                      <td key={assignment._id}>
+                        {grade?.grade || ""}
+                      </td>
+                    );
                   })}
                 </tr>
               );
@@ -95,4 +110,5 @@ function Grades() {
     </div>
   );
 }
+
 export default Grades;
