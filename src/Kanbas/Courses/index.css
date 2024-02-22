@@ -1,7 +1,7 @@
 .wd-course-navigation-content {
   left: 320px;
   top: 50px;
-  overflow-y: scroll;
+  overflow-y: auto;
   position: fixed;
   bottom: 0;
   right: 0;

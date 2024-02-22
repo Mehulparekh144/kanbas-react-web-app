@@ -9,16 +9,18 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/Editor";
 import Grades from "./Grades";
 import "./index.css";
+import ResponsiveNavigation from "../Navigation/Responsive";
 
 function Courses() {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (
     <div className="wd-kanbas-content">
-      <h1>
+      <h1 className="d-none d-md-block ">
         <HiMiniBars3 /> Course {course?.name}
       </h1>
       <CourseNavigation />
+      <ResponsiveNavigation />
       <div>
         <div className="wd-course-navigation-content">
           <Routes>

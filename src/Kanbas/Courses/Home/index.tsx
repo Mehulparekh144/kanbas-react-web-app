@@ -25,8 +25,7 @@ function Home() {
     { name: "View Course Notifications", icon: <FaBell /> },
   ];
   return (
-    <div>
-      <h2>Home</h2>
+    <div className="mt-2">
       <div className="d-flex">
         <div className="flex-fill">
           <ModuleList />

@@ -7,7 +7,6 @@ function Grades() {
   const es = enrollments.filter((enrollment) => enrollment.course === courseId);
   return (
     <div>
-      <h1>Grades</h1>
       <div className="d-flex flex-wrap gap-2 me-2 mb-3 justify-content-end">
         <button
           className="btn btn-light"

@@ -1,0 +1,9 @@
+.wd-assignment-edit {
+  width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+  .wd-assignment-edit {
+    width: 100%;
+  }
+}
