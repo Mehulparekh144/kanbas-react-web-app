@@ -1,6 +1,4 @@
-import React from "react";
 import { Navigate, Route, Routes, useParams } from "react-router";
-import { courses } from "../Database";
 import { HiMiniBars3 } from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import Modules from "./Modules";
@@ -11,7 +9,7 @@ import Grades from "./Grades";
 import "./index.css";
 import ResponsiveNavigation from "../Navigation/Responsive";
 
-function Courses() {
+function Courses({ courses }: { courses : any[]}) {
   const { courseId } = useParams();
   const course = courses.find((course) => course._id === courseId);
   return (

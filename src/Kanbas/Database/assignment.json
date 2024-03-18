@@ -2,91 +2,109 @@
   {
     "_id": "A101",
     "title": "Propulsion Assignment",
+    "description": "This assignment focuses on the principles of propulsion in aerospace engineering.",
     "course": "RS101",
     "week": "Week 1",
     "starting_date": "2024-01-26",
     "due_date": "2024-02-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-15"
   },
   {
     "_id": "A102",
     "title": "Combustion Analysis",
+    "description": "In this assignment, you will analyze the combustion process in aerospace engines.",
     "course": "RS101",
     "week": "Week 2",
     "starting_date": "2024-02-10",
-    "due_date": "02/26/2024",
+    "due_date": "2024-02-26",
     "points": 150,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-28"
   },
   {
     "_id": "A103",
     "title": "Nozzle Design Project",
+    "description": "Design and optimize a nozzle for efficient thrust generation in rocket engines.",
     "course": "RS101",
     "week": "Week 3",
-    "starting_date": "02/26/2024",
-    "due_date": "03/10/2024",
+    "starting_date": "2024-02-26",
+    "due_date": "2024-03-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-03-15"
   },
   {
     "_id": "A201",
     "title": "AerodynamiRS Quiz",
+    "description": "Test your knowledge of aerodynamics with this quiz.",
     "course": "RS102",
     "week": "Week 1",
     "starting_date": "2024-01-26",
     "due_date": "2024-02-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-15"
   },
   {
     "_id": "A202",
     "title": "Flow Analysis",
+    "description": "Analyze the flow characteristics of fluids in aerospace systems.",
     "course": "RS102",
     "week": "Week 2",
     "starting_date": "2024-02-10",
-    "due_date": "02/26/2024",
+    "due_date": "2024-02-26",
     "points": 150,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-28"
   },
   {
     "_id": "A203",
     "title": "Heating Analysis",
+    "description": "Study the heat transfer mechanisms in aerospace applications.",
     "course": "RS102",
     "week": "Week 3",
-    "starting_date": "02/26/2024",
-    "due_date": "03/10/2024",
+    "starting_date": "2024-02-26",
+    "due_date": "2024-03-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-03-15"
   },
   {
     "_id": "A301",
     "title": "Structural Design Task",
+    "description": "Design and analyze the structural components of aerospace vehicles.",
     "course": "RS103",
     "week": "Week 1",
     "starting_date": "2024-01-26",
     "due_date": "2024-02-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-15"
   },
   {
     "_id": "A302",
     "title": "Orbital Calculations",
+    "description": "Perform calculations related to orbital mechanics and spacecraft trajectories.",
     "course": "RS103",
     "week": "Week 2",
     "starting_date": "2024-02-10",
-    "due_date": "02/26/2024",
+    "due_date": "2024-02-26",
     "points": 150,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-02-28"
   },
   {
     "_id": "A303",
     "title": "Systems Engineering Exam",
+    "description": "Test your understanding of systems engineering principles in aerospace.",
     "course": "RS103",
     "week": "Week 3",
-    "starting_date": "02/26/2024",
-    "due_date": "03/10/2024",
+    "starting_date": "2024-02-26",
+    "due_date": "2024-03-10",
     "points": 100,
-    "due_time": "11:59am"
+    "due_time": "11:59am",
+    "until_date": "2024-03-15"
   }
 ]

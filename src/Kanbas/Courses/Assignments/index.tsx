@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FaCaretDown,
   FaCheckCircle,
@@ -8,12 +8,31 @@ import {
 } from "react-icons/fa";
 import "./index.css";
 import { Link, useParams } from "react-router-dom";
-import { assignments } from "../../Database";
+import { useDispatch, useSelector } from "react-redux";
+import { AssignmentState } from "../../store";
+import { deleteAssignment, selectAssignment } from "./reducer";
+
 function Assignments() {
   const { courseId } = useParams();
-  const assignmentList = assignments.filter(
-    (assignment) => assignment.course === courseId
+  const assignmentList = useSelector(
+    (state: AssignmentState) => state.assignmentReducer.assignments
   );
+  const assignment = useSelector(
+    (state: AssignmentState) => state.assignmentReducer.assignment
+  );
+  const dispatch = useDispatch();
+  const [showDeleteModal, setShowDeleteModal] = useState(false);
+  console.log(showDeleteModal);
+
+  const handleConfirmDelete = () => {
+    dispatch(deleteAssignment(assignment._id))
+    setShowDeleteModal(false);
+  };
+
+  const handleCancelDelete = () => {
+    setShowDeleteModal(false);
+  };
+
   return (
     <>
       <div className="d-flex gap-2 justify-content-between flex-wrap">
@@ -29,9 +48,13 @@ function Assignments() {
           >
             + Group
           </button>
-          <button type="button" className="btn btn-danger">
+          <Link
+            to={`/Kanbas/Courses/${courseId}/Assignments/123`}
+            type="button"
+            className="btn btn-danger"
+          >
             + Assignments
-          </button>
+          </Link>
           <select
             className="btn btn-light"
             style={{ backgroundColor: "lightgrey" }}
@@ -64,33 +87,86 @@ function Assignments() {
             </div>
           </div>
           <ul className="list-group">
-            {assignmentList.map((assignment) => (
-              <li className="list-group-item">
-                <FaEllipsisV className="ms-2" />
-                <Link
-                  className="text-decoration-none"
-                  to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
-                >
-                  <FaEdit className="text-success" />
-                  &nbsp;
-                  {assignment.title}
-                </Link>
-                <br />
-                <p className="my-2 text-muted">
-                  {assignment.week} | Starting {assignment.starting_date} | Due{" "}
-                  {assignment.due_date} at {assignment.due_time} |
-                  {assignment.points} pts
-                </p>
-                <span className="float-end">
-                  <FaCheckCircle className="ms-2 text-success" />
+            {assignmentList
+              .filter((assignment) => assignment.course === courseId)
+              .map((assignment) => (
+                <li className="list-group-item">
                   <FaEllipsisV className="ms-2" />
-                </span>
-              </li>
-            ))}
+                  <Link
+                    className="text-decoration-none"
+                    to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
+                  >
+                    <FaEdit className="text-success" />
+                    &nbsp;
+                    {assignment.title}
+                  </Link>
+                  <br />
+                  <p className="my-2 text-muted">
+                    {assignment.week} | Starting {assignment.starting_date} |
+                    Due {assignment.due_date} at {assignment.due_time} |
+                    {assignment.points} pts
+                  </p>
+                  <span className="float-end">
+                    <button
+                      className="btn btn-danger btn-sm px-2 rounded-2"
+                      onClick={() => {
+                        setShowDeleteModal(true)
+                        dispatch(selectAssignment(assignment))
+                      }}
+                    >
+                      Delete
+                    </button>
+                    <FaCheckCircle className="ms-2 text-success" />
+                    <FaEllipsisV className="ms-2" />
+                  </span>
+                </li>
+              ))}
           </ul>
         </li>
       </ul>
+
+      {showDeleteModal && (
+        <div className="modal" tabIndex={-1} role="dialog" style={{ display: "block" }}>
+          <div className="modal-dialog" role="document">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h5 className="modal-title">Confirm Delete</h5>
+                <button
+                  type="button"
+                  className="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                  onClick={handleCancelDelete}
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div className="modal-body">
+                Are you sure you want to delete the assignment?
+              </div>
+              <div className="modal-footer">
+                <button
+                  type="button"
+                  className="btn btn-danger"
+                  onClick={handleConfirmDelete}
+                >
+                  Delete
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  data-dismiss="modal"
+                  onClick={handleCancelDelete}
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
+
 export default Assignments;
